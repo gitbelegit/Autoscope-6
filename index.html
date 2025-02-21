@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoScope - Part Price Estimator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Zilla+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Heading and Dark Mode Toggle -->
+        <header>
+            <h1 id="title">AUTO SCOPE</h1>
+            <div class="mode-toggle">
+                <i id="moon-icon" class="fas fa-moon"></i> <!-- Moon Icon -->
+                <label class="switch">
+                    <input type="checkbox" id="dark-mode-toggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </header>
+
+        <!-- Main content -->
+        <div class="form">
+            <h2>Estimate the Value of a Used Auto Part</h2>
+            <form id="estimate-form">
+                <div class="input-group">
+                    <label for="part-name">Enter Part Name:</label>
+                    <input type="text" id="part-name" placeholder="e.g., Brake Disc" required>
+                </div>
+                <div class="input-group">
+                    <label for="part-image">Upload Image (Optional):</label>
+                    <input type="file" id="part-image">
+                </div>
+                <button type="submit">Get Estimate</button>
+                <button type="button" id="reset-btn">Reset</button> <!-- Added Reset Button -->
+            </form>
+            <div id="estimate-result" class="estimate-result">
+                <h3>Estimated Value:</h3>
+                <div id="loading-icon" class="loading-icon" style="display: none;">
+                    <i class="fas fa-spinner fa-spin"></i> Calculating...
+                </div>
+                <p id="price">₹0</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Font Awesome for moon icon -->
+</body>
+</html>

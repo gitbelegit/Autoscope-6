@@ -1,0 +1,197 @@
+/* General Styles */
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between; /* Keep space between title and toggle */
+    align-items: center; /* Vertically center content */
+    width: 100%;
+    padding: 10px;
+}
+
+/* Title */
+#title {
+    font-family: 'Pirata One', cursive;
+    font-size: 2.5rem; /* Increased size for better visibility */
+    text-align: center; /* Ensures text is centered */
+    flex-grow: 1; /* Allows title to take up remaining space */
+}
+
+/* Mode toggle styles */
+.mode-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end; /* Align toggle to the right */
+}
+
+/* Adjust the rest of the CSS */
+/* General Styles */
+/* General Styles */
+body {
+    font-family: 'Zilla Slab', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #DAD2BC; /* Body background color for light mode */
+    color: #333;
+    display: flex; /* Flexbox to center content */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    transition: background-color 0.3s, color 0.3s;
+    flex-direction: column; /* Stack header and container */
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #011C27; /* Dark mode background color */
+    color: #ffffff;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background: #A40606; /* Container background color for light mode */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode for container */
+.dark-mode .container {
+    background: #230007; /* Dark mode container background color */
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between; /* Keep space between title and toggle */
+    align-items: center; /* Vertically center content */
+    width: 100%;
+    padding: 10px;
+}
+
+/* Title */
+#title {
+    font-family: 'Pirata One', cursive;
+    font-size: 2.5rem; /* Increased size for better visibility */
+    text-align: center; /* Ensures text is centered */
+    flex-grow: 1; /* Allows title to take up remaining space */
+}
+
+/* Mode toggle styles */
+.mode-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end; /* Align toggle to the right */
+}
+
+/* Form Styles */
+.form {
+    text-align: left;
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* Input group styles */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+}
+
+/* Text input & file input */
+input[type="text"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Button Styles */
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #007bff;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Button Hover */
+button:hover {
+    background: #0056b3;
+}
+
+/* Estimate Result */
+.estimate-result {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e9ecef;
+    border-radius: 5px;
+}
+
+.dark-mode .estimate-result {
+    background: #444;
+}
+
+/* Price text styling */
+#price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+.dark-mode #price {
+    color: #7fff7f;
+}
+
+/* Dark Mode Text Color */
+.dark-mode .form h2, 
+.dark-mode .input-group label, 
+.dark-mode .estimate-result h3 {
+    color: #ffffff; /* Ensures visibility of all text except button */
+}
+
+.dark-mode button {
+    background: #0056b3; /* Ensure button text is still visible in dark mode */
+}
+
+.dark-mode button:hover {
+    background: #003366; /* Darker hover state */
+}
+
+/* Image Preview Styling */
+.image-preview {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.image-preview img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}
